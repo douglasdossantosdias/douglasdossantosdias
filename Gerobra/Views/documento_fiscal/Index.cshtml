@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Gerobra.Models.documento_fiscal>
+
+@{
+    ViewBag.Title = "Documento Fiscal";
+}
+
+<h2>Listar Documento Fiscal</h2>
+
+<p>
+    @Html.ActionLink("Criar novo documento fiscal", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.serie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dta_doc_fiscal)
+        </th>
+        <th>
+            @Html.DisplayName("Tipo do Documento Fiscal")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.serie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dta_doc_fiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo_documento_fiscal.nome)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id_documento_fiscal }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.id_documento_fiscal }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.id_documento_fiscal })
+        </td>
+    </tr>
+}
+
+</table>

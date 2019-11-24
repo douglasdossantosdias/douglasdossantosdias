@@ -1,0 +1,213 @@
+﻿@model Gerobra.Models.pessoa
+
+@{
+    ViewBag.Title = "Detalhar Pessoa";
+}
+
+<h2>Detalhes da Pessoa</h2>
+
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_juridico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_juridico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_fantasia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_fantasia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cnpj)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cnpj)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.inscricao_estadual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inscricao_estadual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_nascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_nascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.naturalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naturalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_mae)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_mae)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pis_pasep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pis_pasep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.titulo_eleitor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titulo_eleitor)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.conta_bancaria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.conta_bancaria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cnh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cnh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cargo.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cargo.nome)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado_civil.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado_civil.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grau_instrucao.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grau_instrucao.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nacionalidade.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nacionalidade.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pessoa2.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pessoa2.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_sanguineo.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_sanguineo.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_pessoa.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_pessoa.nome)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_pessoa }) |
+    @Html.ActionLink("Voltar", "List")
+</p>

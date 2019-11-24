@@ -1,0 +1,80 @@
+﻿@model Gerobra.Models.endereco
+
+@{
+    ViewBag.Title = "Excluir Endereço";
+}
+
+<h2>Excluir Endereço</h2>
+
+<h3>Você realmente quer Excluir esta Endereço?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.logradouro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logradouro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.complemento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.complemento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cidade.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cidade.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pessoa.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pessoa.nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

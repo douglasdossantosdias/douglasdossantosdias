@@ -1,0 +1,58 @@
+﻿@model Gerobra.Models.tab_backup
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tab_backup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_arquivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_arquivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_backup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_backup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_backup.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_backup.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usuario.id_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuario.id_usuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_tab_backup }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

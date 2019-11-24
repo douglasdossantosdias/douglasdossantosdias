@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Gerobra.Models.permissao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.listar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.editar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.criar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.excluir)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.visualizar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grupo.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.modulo.nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.listar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.editar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.criar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.excluir)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.visualizar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grupo.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.modulo.nome)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_permissao }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_permissao }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_permissao })
+        </td>
+    </tr>
+}
+
+</table>

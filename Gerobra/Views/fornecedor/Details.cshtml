@@ -1,0 +1,42 @@
+﻿@model Gerobra.Models.fornecedor
+
+@{
+    ViewBag.Title = "Detalhar Fornecedor";
+}
+
+<h2>Detalhar Fornecedor</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Ativo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Nome do Fornecedor")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pessoa.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tipo de Fornecimento")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_fornecedor.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_fornecedor }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

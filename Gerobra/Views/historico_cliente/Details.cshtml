@@ -1,0 +1,50 @@
+﻿@model Gerobra.Models.historico_cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>historico_cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_historico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_historico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cliente.id_cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cliente.id_cliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_historico_cliente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

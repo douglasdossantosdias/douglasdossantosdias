@@ -1,0 +1,58 @@
+﻿@model Gerobra.Models.rel_servico_fornecedor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>rel_servico_fornecedor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.unidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.unidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.preco_unitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.preco_unitario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_default_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_default_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fornecedor.id_fornecedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fornecedor.id_fornecedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.servico.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.servico.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_rel_servico_fornecedor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

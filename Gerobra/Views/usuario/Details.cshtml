@@ -1,0 +1,42 @@
+﻿@model Gerobra.Models.usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pessoa.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pessoa.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_usuario.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_usuario.descricao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_usuario }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

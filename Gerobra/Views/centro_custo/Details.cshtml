@@ -1,0 +1,58 @@
+﻿@model Gerobra.Models.centro_custo
+
+@{
+    ViewBag.Title = "Detalhar Centro de Custo";
+}
+
+<h2>Detalhes do Centro de Custos</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sintetico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sintetico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_centro_custo }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

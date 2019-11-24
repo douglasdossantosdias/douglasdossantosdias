@@ -1,0 +1,68 @@
+﻿@model Gerobra.Models.caixa
+
+@{
+    ViewBag.Title = "Excluir Movimento";
+}
+
+<h2>Excluir Movimento do Caixa</h2>
+
+<h3>Você realmente quer Excluir este Movimento?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obra.cod_obra)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_movimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_movimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_movimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_movimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valor)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Documento Fiscal")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.documento_fiscal.descricao)
+        </dd>
+
+
+
+
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

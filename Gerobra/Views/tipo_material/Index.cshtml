@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Gerobra.Models.tipo_material>
+
+@{
+    ViewBag.Title = "Tipo de Material";
+}
+
+<h2>Tipo de Material</h2>
+
+<p>
+    @Html.ActionLink("Criar novo tipo de material", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.id_tipo_material }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.id_tipo_material }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.id_tipo_material })
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.ActionLink("Retornar Cadastro de Material de Fornecedor", "Create", "rel_material_fornecedor")

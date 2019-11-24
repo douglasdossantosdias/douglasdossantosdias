@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Gerobra.Models.migracao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.dta_migracao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entidade_origem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entidade_destino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.funcionario.id_funcionario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario.id_usuario)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.dta_migracao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entidade_origem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entidade_destino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sin_ativo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.funcionario.id_funcionario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario.id_usuario)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_migracao }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_migracao }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_migracao })
+        </td>
+    </tr>
+}
+
+</table>

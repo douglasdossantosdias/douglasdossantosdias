@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Gerobra.Models.pais>
+
+@{
+    ViewBag.Title = "Listar Pais";
+}
+
+    <h2>Listar Pais</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Nome do Pais")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id_pais }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.id_pais }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.id_pais })
+        </td>
+    </tr>
+}
+
+</table>

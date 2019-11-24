@@ -1,0 +1,120 @@
+﻿@model Gerobra.Models.obra
+
+@{
+    ViewBag.Title = "Excluir Obra";
+}
+
+<h2>Excluir Obra</h2>
+
+<h3>Você realmente quer Excluir esta OBRA?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_obra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_obra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_inicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_inicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_fim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_fim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_previsao_inicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_previsao_inicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_previsao_fim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_previsao_fim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.orcamento_previsao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orcamento_previsao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.orcamento_total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orcamento_total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.endereco.logradouro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endereco.logradouro)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Status da Obra")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status_obra.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tipo da Obra")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_obra.descricao)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Gerobra.Models.caixa>
+
+@{
+    ViewBag.Title = "Caixa";
+}
+
+<h2>Listar Movimentos do Caixa</h2>
+
+<p>
+    @Html.ActionLink("Novo Movimento", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dta_movimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo_movimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.valor)
+        </th>
+        <th>
+            @Html.DisplayName("Documento Fiscal")
+        </th>
+
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.obra.cod_obra)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.dta_movimento)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.tipo_movimento)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.valor)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.documento_fiscal.descricao)
+    </td>
+
+
+    <td>
+        @Html.ActionLink("Editar", "Edit", new { id = item.id_caixa }) |
+        @Html.ActionLink("Detalhes", "Details", new { id = item.id_caixa }) |
+        @Html.ActionLink("Excluir", "Delete", new { id = item.id_caixa })
+    </td>
+</tr>
+}
+
+</table>

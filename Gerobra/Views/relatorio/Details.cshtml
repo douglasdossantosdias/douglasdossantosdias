@@ -1,0 +1,50 @@
+﻿@model Gerobra.Models.relatorio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>relatorio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_relatorio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_relatorio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_ultima_atualizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_ultima_atualizacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_view)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_view)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modulo.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modulo.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_relatorio }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,58 @@
+﻿@model Gerobra.Models.documento_fiscal
+
+@{
+    ViewBag.Title = "Detalhar Documento Fiscal";
+}
+
+    <h2>Detalhar Documento Fiscal</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.serie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.serie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_doc_fiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_doc_fiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tipo de Documento Fiscal")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_documento_fiscal.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_documento_fiscal }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

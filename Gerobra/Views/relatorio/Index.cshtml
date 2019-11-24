@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Gerobra.Models.relatorio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.dta_relatorio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dta_ultima_atualizacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nome_view)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.modulo.nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.dta_relatorio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dta_ultima_atualizacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome_view)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.modulo.nome)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_relatorio }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_relatorio }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_relatorio })
+        </td>
+    </tr>
+}
+
+</table>

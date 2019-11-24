@@ -1,0 +1,88 @@
+﻿@model Gerobra.Models.documento
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Você realmente quer Excluir esta Documento?</h3>
+<div>
+    <h4>documento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_documento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_documento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endereco_arquivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endereco_arquivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.extensao_arquivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.extensao_arquivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_arquivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_arquivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obra.cod_obra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_documento.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_documento.nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Gerobra.Models.diario_obra>
+
+@{
+    ViewBag.Title = "Diario";
+}
+
+<h2>Listar Diários da Obra</h2>
+
+<p>
+    @Html.ActionLink("Criar novo diário", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dta_diario)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.obra.cod_obra)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.descricao)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.dta_diario)
+    </td>
+
+
+    <td>
+        @Html.ActionLink("Editar", "Edit", new { id = item.id_diario_obra }) |
+        @Html.ActionLink("Detalhes", "Details", new { id = item.id_diario_obra }) |
+        @Html.ActionLink("Excluir", "Delete", new { id = item.id_diario_obra })
+    </td>
+</tr>
+}
+
+</table>

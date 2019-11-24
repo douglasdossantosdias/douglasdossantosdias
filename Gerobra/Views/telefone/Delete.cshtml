@@ -1,0 +1,64 @@
+﻿@model Gerobra.Models.telefone
+
+@{
+    ViewBag.Title = "Excluir Telefone";
+}
+
+<h2>Excluir Telefone</h2>
+
+<h3>Você realmente quer Excluir este Telefone?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sta_tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sta_tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ramal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ramal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obra.cod_obra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pessoa.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pessoa.nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

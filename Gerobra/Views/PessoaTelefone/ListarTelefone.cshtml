@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Gerobra.Models.telefone>
+
+@{
+    ViewBag.Title = "Relatório de Celulares";
+}
+<div>
+    <div style="float:left">
+        <h2>Relatórios de Celulares</h2>
+    </div>
+    <div style="float:right; display:none" id="imgLogo">
+        <img src="~/Imagens/gerobra1.png" />
+    </div>
+</div>
+<div id="Impimir">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.sta_tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pessoa.nome)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sta_tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.numero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.pessoa.nome)
+                </td>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id=item.id_telefone }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.id_telefone }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.id_telefone })*@
+                </td>
+            </tr>
+        }
+
+    </table>
+    <input id="btnImpimir" type="button" value="Imprimir Relatório" class="btn btn-default" onclick=" document.getElementById('btnImpimir').style.display = 'none'; aparecerLogo(); " />
+
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jsGeral")
+}

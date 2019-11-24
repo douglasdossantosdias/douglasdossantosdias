@@ -1,0 +1,74 @@
+﻿@model Gerobra.Models.permissao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>permissao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.listar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.listar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.editar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.editar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.criar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.criar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.excluir)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.excluir)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.visualizar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.visualizar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grupo.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grupo.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modulo.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modulo.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_permissao }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

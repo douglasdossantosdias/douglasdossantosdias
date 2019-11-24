@@ -1,0 +1,48 @@
+﻿@model Gerobra.Models.funcionario
+
+@{
+    ViewBag.Title = "Excluir Funcionário";
+}
+
+    <h2>Excluir Funcionário</h2>
+
+<h3>Você realmente deseja excluir este Funcionário?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Ativo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Nome do Funcionário")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pessoa.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Função do Funcionário")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_funcionario.nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

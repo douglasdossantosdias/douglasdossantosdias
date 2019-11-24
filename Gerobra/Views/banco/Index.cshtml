@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Gerobra.Models.banco>
+
+@{
+    ViewBag.Title = "Bancos";
+}
+
+<h2>Bancos</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_banco }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_banco }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_banco })
+        </td>*@
+    </tr>
+}
+
+</table>
+<div>
+    @Html.ActionLink("Criar Conta Bancária", "Create", "conta_bancaria")
+</div>

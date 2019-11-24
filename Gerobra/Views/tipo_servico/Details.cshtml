@@ -1,0 +1,26 @@
+﻿@model Gerobra.Models.tipo_servico
+
+@{
+    ViewBag.Title = "Detalhar Tipo de Serviço";
+}
+
+    <h2>Detalhar Tipo de Serviço</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_tipo_servico }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

@@ -1,0 +1,42 @@
+﻿@model Gerobra.Models.pessoa_imagem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>pessoa_imagem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.foto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.extensao_foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.extensao_foto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pessoa.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pessoa.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_pessoa }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Gerobra</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                @*<img src="~/Imagens/gerobra1.png" />*@
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                @Html.ActionLink("Gerobra", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Cadastros <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Pessoas", "Create", "pessoa")</li>
+
+                            <li>@Html.ActionLink("Clientes", "Create", "cliente")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Fornecedores", "Create", "fornecedor")</li>
+                            <li>@Html.ActionLink("Materiais de Fornecedores", "Create", "rel_material_fornecedor")</li>
+                            
+                            <li>@Html.ActionLink("Serviços de Fornecedores", "Create", "rel_servico_fornecedor")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Funcionário", "Create", "funcionario")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Países", "Create", "pais")</li>
+                            <li>@Html.ActionLink("Estados", "Create", "uf")</li>
+                            <li>@Html.ActionLink("Cidades", "Create", "cidade")</li>
+                            <li>@Html.ActionLink("Enderço", "Create", "endereco")</li>
+                            <li>@Html.ActionLink("Telefones", "Create", "telefone")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Obra <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Adicionar Obra", "create", "obra")</li>
+                            <li>@Html.ActionLink("Ver Obra", "Index", "obra")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Diário de Obras", "Index", "diario_obra")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Custo da Obra", "Index", "custo")</li>
+                            <li>@Html.ActionLink("Documentos de Obras", "Index", "documento")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Material de Obra", "Index", "material")</li>
+                            <li>@Html.ActionLink("Serviços de Obras", "Index", "servico")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pesquisas <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Pessoas", "List", "pessoa")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Clientes", "Index", "cliente")</li>
+                            <li>@Html.ActionLink("Fornecedores", "Index", "fornecedor")</li>
+                            <li>@Html.ActionLink("Funcionário", "Index", "funcionario")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Países", "Index", "pais")</li>
+                            <li>@Html.ActionLink("Estados", "Index", "uf")</li>
+                            <li>@Html.ActionLink("Cidades", "Index", "cidade")</li>
+                            <li>@Html.ActionLink("Enderço", "Index", "endereco")</li>
+                            <li>@Html.ActionLink("Telefones", "Index", "telefone")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Financeiro <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Caixa", "Index", "caixa")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Documentos Fiscais", "Index", "documento_fiscal")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Centro de Custo", "Index", "centro_custo")</li>
+                            <li>@Html.ActionLink("Conta bancária", "Index", "conta_bancaria")</li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Relatórios <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Relatórios de Celulares", "ListarTelefone", "PessoaTelefone")</li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @Html.Partial("_LoginPartial")
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Gerobra</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

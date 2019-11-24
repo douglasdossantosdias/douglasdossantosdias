@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Gerobra.Models.servico>
+
+@{
+    ViewBag.Title = "Listar Serviços";
+}
+
+    <h2>Listar Serviços</h2>
+
+<p>
+    @Html.ActionLink("Criar novo serviço", "Create")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayName("Tipo de serviço")
+        </th>
+        <th>
+            @Html.DisplayName("Nome do Serviço")
+        </th>
+
+
+        <th>
+            @Html.DisplayName("Ativo")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.tipo_servico.nome)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.nome)
+    </td>
+
+
+    <td>
+        @Html.DisplayFor(modelItem => item.sin_ativo)
+    </td>
+
+    <td>
+        @Html.ActionLink("Editar", "Edit", new { id = item.id_servico }) |
+        @Html.ActionLink("Detalhes", "Details", new { id = item.id_servico }) |
+        @Html.ActionLink("Excluir", "Delete", new { id = item.id_servico })
+    </td>
+</tr>
+}
+
+</table>

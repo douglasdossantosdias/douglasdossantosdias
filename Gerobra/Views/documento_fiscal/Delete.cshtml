@@ -1,0 +1,64 @@
+﻿@model Gerobra.Models.documento_fiscal
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Documento Fiscal</h2>
+
+<h3>Você Realmente quer Excluir este Documento Fiscal?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.serie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.serie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_doc_fiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_doc_fiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_documento_fiscal.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_documento_fiscal.nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

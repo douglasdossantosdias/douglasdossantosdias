@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Gerobra.Models.custo>
+
+@{
+    ViewBag.Title = "Custo de Obra";
+}
+
+<h2>Custo de Obra</h2>
+
+<p>
+    @Html.ActionLink("Lançar Novo Custo de Obra", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.quantidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.centro_custo.codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.documento_fiscal.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rel_material_fornecedor.unidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rel_servico_fornecedor.unidade)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.centro_custo.codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.documento_fiscal.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.obra.cod_obra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rel_material_fornecedor.unidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rel_servico_fornecedor.unidade)
+        </td>
+
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id_custo }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.id_custo }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.id_custo })
+        </td>
+    </tr>
+}
+
+</table>

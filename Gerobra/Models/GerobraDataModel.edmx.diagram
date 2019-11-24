@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ad4d325bf3504e0899ec63b863924ceb" Name="Diagram1">
+        <EntityTypeShape EntityType="GerobraBCOModel.acao" Width="1.5" PointX="13.5" PointY="49.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.banco" Width="1.5" PointX="8.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.caixa" Width="1.5" PointX="18" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.cargo" Width="1.5" PointX="3" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.centro_custo" Width="1.5" PointX="18.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.cidade" Width="1.5" PointX="5.25" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.cliente" Width="1.5" PointX="7.5" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.conta_bancaria" Width="1.5" PointX="10.5" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.cor_raca" Width="1.5" PointX="3" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.custo" Width="1.5" PointX="21" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.diario_obra" Width="1.5" PointX="15" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.documento" Width="1.5" PointX="15" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.documento_fiscal" Width="1.5" PointX="15.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.endereco" Width="1.5" PointX="7.5" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.estado_civil" Width="1.5" PointX="3" PointY="33.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.fornecedor" Width="1.5" PointX="7.5" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.funcionario" Width="1.5" PointX="10.5" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.grau_instrucao" Width="1.5" PointX="3" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.grupo" Width="1.5" PointX="13.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.historico_cliente" Width="1.5" PointX="9.75" PointY="38.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.log" Width="1.5" PointX="15.75" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.material" Width="1.5" PointX="10.5" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.migracao" Width="1.5" PointX="12.75" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.modulo" Width="1.5" PointX="13.5" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.nacionalidade" Width="1.5" PointX="3" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.obra" Width="1.5" PointX="12.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.pais" Width="1.5" PointX="0.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.permissao" Width="1.5" PointX="15.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.pessoa" Width="1.5" PointX="5.25" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.pessoa_imagem" Width="1.5" PointX="7.5" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.rel_cliente_obra" Width="1.5" PointX="15" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.rel_funcionario_obra" Width="1.5" PointX="18" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.rel_grupo_usuario" Width="1.5" PointX="15.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.rel_material_fornecedor" Width="1.5" PointX="12.75" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.rel_servico_fornecedor" Width="1.5" PointX="15.75" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.relatorio" Width="1.5" PointX="15.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.senha" Width="1.5" PointX="12.75" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.servico" Width="1.5" PointX="13.5" PointY="46.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.status_obra" Width="1.5" PointX="10.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tab_backup" Width="1.5" PointX="18.75" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.telefone" Width="1.5" PointX="21" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_backup" Width="1.5" PointX="16.5" PointY="45.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_cliente" Width="1.5" PointX="5.25" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_curso" Width="1.5" PointX="0.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_documento" Width="1.5" PointX="12.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_documento_fiscal" Width="1.5" PointX="13.5" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_fornecedor" Width="1.5" PointX="5.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_funcionario" Width="1.5" PointX="8.25" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_material" Width="1.5" PointX="8.25" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_obra" Width="1.5" PointX="10.5" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_pessoa" Width="1.5" PointX="3" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_sanguineo" Width="1.5" PointX="3" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_servico" Width="1.5" PointX="11.25" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.tipo_usuario" Width="1.5" PointX="8.25" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.uf" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GerobraBCOModel.usuario" Width="1.5" PointX="10.5" PointY="33.625" IsExpanded="true" />
+        <AssociationConnector Association="GerobraBCOModel.FK__log__id_acao__5224328E" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__conta_ban__id_ba__3E1D39E1" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__caixa__id_docume__3864608B" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__caixa__id_obra__3A4CA8FD" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__caixa__id_usuari__395884C4" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_cargo__607251E5" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__custo__id_centro__40F9A68C" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__cidade__id_uf__3B40CD36" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__endereco__id_cid__498EEC8D" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__cliente__id_pess__3D2915A8" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__cliente__id_tipo__3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__historico__id_cl__503BEA1C" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_clien__id_cl__634EBE90" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__conta_ban__id_pe__3F115E1A" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_cor_r__5D95E53A" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__custo__id_docume__43D61337" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__custo__id_obra__40058253" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__custo__id_rel_ma__41EDCAC5" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__custo__id_rel_se__42E1EEFE" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__custo__id_usuari__44CA3770" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__diario_ob__id_ob__45BE5BA9" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__documento__id_ob__46B27FE2" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__documento__id_ti__47A6A41B" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__documento__id_ti__489AC854" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__endereco__id_pes__4A8310C6" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__obra__id_enderec__55F4C372" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_estad__5AB9788F" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__fornecedo__id_pe__4C6B5938" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__fornecedo__id_ti__4B7734FF" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_mater__id_fo__690797E6" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_servi__id_fo__6AEFE058" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__funcionar__id_pe__4E53A1AA" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__funcionar__id_ti__4D5F7D71" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__migracao__id_fun__540C7B00" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_funci__id_fu__65370702" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__grau_inst__id_ti__4F47C5E3" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_grau___5E8A0973" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__permissao__id_gr__59C55456" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_grupo__id_gr__671F4F74" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__log__id_usuario__51300E55" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__material__id_tip__531856C7" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_mater__id_ma__69FBBC1F" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__migracao__id_usu__55009F39" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__permissao__id_mo__58D1301D" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__relatorio__id_mo__6CD828CA" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_nacio__5CA1C101" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__obra__id_status___56E8E7AB" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__obra__id_tipo_ob__57DD0BE4" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_clien__id_ob__6442E2C9" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_funci__id_ob__662B2B3B" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__telefone__id_obr__70A8B9AE" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__uf__id_pais__719CDDE7" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_empre__6166761E" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_tipo___5BAD9CC8" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa__id_tipo___5F7E2DAC" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__pessoa_im__id_pe__625A9A57" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__telefone__id_pes__6FB49575" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__usuario__id_pess__73852659" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_grupo__id_us__681373AD" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__rel_servi__id_se__6BE40491" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__senha__id_usuari__6DCC4D03" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__servico__id_tipo__6EC0713C" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__tab_backu__id_ti__37703C52" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__tab_backu__id_us__367C1819" ManuallyRouted="false" />
+        <AssociationConnector Association="GerobraBCOModel.FK__usuario__id_tipo__72910220" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

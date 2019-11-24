@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Gerobra.Models.funcionario>
+
+@{
+    ViewBag.Title = "Listar Funcionário";
+}
+
+<h2>Listar Funcionário</h2>
+
+<br />
+@using (Html.BeginForm())
+{
+    <p>
+        Procurar por nome: @Html.TextBox("SearchString")
+
+
+        <input type="submit" value="Procurar" class="btn btn-primary" />
+
+    </p>
+}
+<br />
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayName("Nome do Funcionário")
+        </th>
+        <th>
+            @Html.DisplayName("Função do Funcionário")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.pessoa.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipo_funcionario.nome)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.id_funcionario }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.id_funcionario }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.id_funcionario })
+            </td>
+        </tr>
+    }
+
+</table>

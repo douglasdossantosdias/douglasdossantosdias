@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Gerobra.Models.rel_servico_fornecedor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.unidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.preco_unitario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fornecedor.id_fornecedor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.servico.nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.unidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.preco_unitario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fornecedor.id_fornecedor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.servico.nome)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id_rel_servico_fornecedor }) |
+            @Html.ActionLink("Detahes", "Details", new { id=item.id_rel_servico_fornecedor }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.id_rel_servico_fornecedor })
+        </td>
+    </tr>
+}
+
+</table>

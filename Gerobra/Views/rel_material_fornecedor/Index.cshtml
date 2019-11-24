@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Gerobra.Models.rel_material_fornecedor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.unidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.preco_unitario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.peso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.textura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.altura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.largura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profundidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fornecedor.id_fornecedor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.material.nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.unidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.preco_unitario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.modelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.peso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.textura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.altura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.largura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.profundidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fornecedor.id_fornecedor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.material.nome)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_rel_material_fornecedor }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_rel_material_fornecedor }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_rel_material_fornecedor })
+        </td>
+    </tr>
+}
+
+</table>

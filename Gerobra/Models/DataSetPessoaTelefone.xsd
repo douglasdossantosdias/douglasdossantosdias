@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetPessoaTelefone" targetNamespace="http://tempuri.org/DataSetPessoaTelefone.xsd" xmlns:mstns="http://tempuri.org/DataSetPessoaTelefone.xsd" xmlns="http://tempuri.org/DataSetPessoaTelefone.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=51.75.222.173;Initial Catalog=GerobraBCO;Persist Security Info=True;User ID=sa;Password=Aa0011691100!@" IsAppSettingsProperty="false" Modifier="Assembly" Name="GerobraDbContext (Gerobra)" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_PessoaTelefoneTableAdapter" GeneratorDataComponentClassName="vw_PessoaTelefoneTableAdapter" Name="vw_PessoaTelefone" UserDataComponentName="vw_PessoaTelefoneTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GerobraDbContext (Gerobra)" DbObjectName="GerobraBCO.dbo.vw_PessoaTelefone" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nome, telefone FROM dbo.vw_PessoaTelefone</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nome" DataSetColumn="nome" />
+              <Mapping SourceColumn="telefone" DataSetColumn="telefone" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetPessoaTelefone" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSetPessoaTelefone" msprop:Generator_UserDSName="DataSetPessoaTelefone">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_PessoaTelefone" msprop:Generator_TableClassName="vw_PessoaTelefoneDataTable" msprop:Generator_TableVarName="tablevw_PessoaTelefone" msprop:Generator_TablePropName="vw_PessoaTelefone" msprop:Generator_RowDeletingName="vw_PessoaTelefoneRowDeleting" msprop:Generator_RowChangingName="vw_PessoaTelefoneRowChanging" msprop:Generator_RowEvHandlerName="vw_PessoaTelefoneRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_PessoaTelefoneRowDeleted" msprop:Generator_UserTableName="vw_PessoaTelefone" msprop:Generator_RowChangedName="vw_PessoaTelefoneRowChanged" msprop:Generator_RowEvArgName="vw_PessoaTelefoneRowChangeEvent" msprop:Generator_RowClassName="vw_PessoaTelefoneRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefone" msprop:Generator_ColumnVarNameInTable="columntelefone" msprop:Generator_ColumnPropNameInRow="telefone" msprop:Generator_ColumnPropNameInTable="telefoneColumn" msprop:Generator_UserColumnName="telefone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

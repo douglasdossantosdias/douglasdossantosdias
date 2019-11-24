@@ -1,0 +1,26 @@
+﻿@model Gerobra.Models.pais
+
+@{
+    ViewBag.Title = "Detalhar Pais";
+}
+
+<h2>Detalhar Pais</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Nome do Pais")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_pais }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

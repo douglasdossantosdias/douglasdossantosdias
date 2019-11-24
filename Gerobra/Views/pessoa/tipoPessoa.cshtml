@@ -1,0 +1,28 @@
+﻿@model Gerobra.Models.pessoa
+@{
+    ViewBag.Title = "Pessoa Tipo";
+}
+
+<h2>Escolha o tipo de pessoa</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <td>
+            @Html.DropDownListFor(modelItem => Model.id_tipo_pessoa, new SelectList(new List<Object>
+        {
+            new {value = 0, text = ""},
+            new {value = 1, text = "Física"},
+            new {value = 2, text = "Jurídica"}
+        }, "value", "text", 0))
+        </td>
+
+        <input type="submit" value="Enviar" class="btn btn-default" />
+    </div>
+
+
+
+
+
+
+}

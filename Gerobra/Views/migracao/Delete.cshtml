@@ -1,0 +1,72 @@
+﻿@model Gerobra.Models.migracao
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>migracao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_migracao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_migracao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.entidade_origem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.entidade_origem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.entidade_destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.entidade_destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.funcionario.id_funcionario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.funcionario.id_funcionario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usuario.id_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuario.id_usuario)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

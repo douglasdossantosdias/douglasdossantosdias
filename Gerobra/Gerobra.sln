@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerobra", "Gerobra.csproj", "{2B1D0C7D-6D9C-4809-A938-07782E3DE142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerobra.Tests", "..\Gerobra.Tests\Gerobra.Tests.csproj", "{5F3B5468-822F-4A8D-BD30-8A1667611D1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B1D0C7D-6D9C-4809-A938-07782E3DE142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B1D0C7D-6D9C-4809-A938-07782E3DE142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B1D0C7D-6D9C-4809-A938-07782E3DE142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B1D0C7D-6D9C-4809-A938-07782E3DE142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F3B5468-822F-4A8D-BD30-8A1667611D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3B5468-822F-4A8D-BD30-8A1667611D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3B5468-822F-4A8D-BD30-8A1667611D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3B5468-822F-4A8D-BD30-8A1667611D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {858F6779-50A7-4DC8-A415-5636058386E4}
+	EndGlobalSection
+EndGlobal

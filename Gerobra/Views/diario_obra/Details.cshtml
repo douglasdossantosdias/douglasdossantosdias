@@ -1,0 +1,48 @@
+﻿@model Gerobra.Models.diario_obra
+
+@{
+    ViewBag.Title = "Detalhar Diario de Obra";
+}
+
+    <h2>Detalhar Diario de Obra</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_diario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_diario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obra.cod_obra)
+        </dd>
+        <dt>
+            @Html.DisplayName("Ativo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_diario_obra }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

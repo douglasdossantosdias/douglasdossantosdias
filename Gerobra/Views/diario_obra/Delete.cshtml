@@ -1,0 +1,56 @@
+﻿@model Gerobra.Models.diario_obra
+
+@{
+    ViewBag.Title = "Excluir Diário de Obra";
+}
+
+    <h2>Excluir Diário de Obra</h2>
+
+<h3>Você realmente quer Excluir este Diário de Obra?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_diario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_diario)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obra.cod_obra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obra.cod_obra)
+        </dd>
+        <dt>
+            @Html.DisplayName("Ativo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

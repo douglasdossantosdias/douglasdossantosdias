@@ -1,0 +1,66 @@
+﻿@model Gerobra.Models.migracao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>migracao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dta_migracao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dta_migracao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.entidade_origem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.entidade_origem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.entidade_destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.entidade_destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sin_ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sin_ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.funcionario.id_funcionario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.funcionario.id_funcionario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usuario.id_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuario.id_usuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_migracao }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

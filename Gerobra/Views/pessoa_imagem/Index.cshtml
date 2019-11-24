@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Gerobra.Models.pessoa_imagem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.extensao_foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pessoa.nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.extensao_foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pessoa.nome)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_pessoa }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_pessoa }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_pessoa })
+        </td>
+    </tr>
+}
+
+</table>
